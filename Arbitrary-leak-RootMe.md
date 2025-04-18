@@ -48,15 +48,3 @@ int main() {
 ```
 The main security problem is this line: printf(buffer);
 
-### Why ?
-Because this is a *formated string*
-
-### What is a formated string ?
-A formatted string is a call to printf but with a variable instead of the classic "%s %s".
-
-### Why this is Bad ?
-So basically if you have the control of what's is inside the variable insine printf, you can print the stack memory...yes.
-
-### How ?
-In printf you can print memory address with the %p flag, printf gonna print stacks address values.
-
